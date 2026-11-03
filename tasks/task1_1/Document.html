@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+<!-- this is a comment? -->
+
+<!-- This is a nav element, which can be used to link to various points in the document -->
+<!-- Unsure how to link to another part of the same document -->
+<nav>
+    <ul>
+        <li> <a href="Test Image"> Simple Tests</a> </li>
+        <li> <a href="#"> Article Test</a> </li>
+        <li> <a href="#"> Extra</a> </li>
+    </ul>
+</nav>
+
+<!-- The main document can be enclosed inside a 'main' element -->
+<main>
+<!-- Headers range from h1 to h6, each getting progressively smaller-->
+<h1>Test Document</h1>
+
+<h2>Test Paragraph</h2>
+    <p>This is a test paragraph. Testing the <i>i command</i> here, vs the <em>em command</em> here.
+        Similarly, testing the <b>b command</b> here, vs the <strong>strong command</strong> here.
+    </p>
+
+    <!-- By default, i and em, and b and strong are equivalent, while em and strong can be specified
+        and changed using CSS styling. -->
+
+    <!-- Ordered lists are created with <ol>, unordered with <ul>
+         start specifies the index/numbering of the first element.
+         Each item in a list is an <li> list element. -->
+<h3>Test List</h3>
+    <ol start="-1">
+        <li>list test item 1</li>
+        <li>list test item 2</li>
+        <li>list test item 3</li>
+    </ol>
+
+<h2>Test Link</h2>
+    <p>
+        <!-- Use <a>, the anchor element for hyperlinks, with the href attribute specifying the target
+             Subsequent text is the anchor text, which should indicate what the document is linking to -->
+        In COMP2850, we will use the <a href="https://kotlinlang.org/">Kotlin
+        programming language</a> to build applications.
+    </p>
+
+<h2>Test Image</h2>
+    <p>
+        Testing images here
+    </p>
+
+    <!-- Images are placed with a single <img> (no break required).
+         src gives the location or links to the image to be displayed
+         width and height of the image can be specified, or left blank to render the full image
+         alt is for accessibility, and gives a description of the image
+         alt="" indicates an image can be ignored by the screenreader
+         Finally, title displays the given text when the cursor hovers over the image -->
+    <img src="cowboing.jpeg" width="150" height="201" alt="cowboing" title="Cowboing">
+
+</main>
+
+<!-- An article element, which may have headers and footers, various section elements, each of which could
+     contain their own embedded articles
+     Each article should clearly have some <hx> as an identifier-->
+<article>
+    <header><h2>Test Article</h2></header>
+    Here we have a short article, regarding the above frog, and what a rather handsome and amusing frog they are indeed!
+
+    <!-- There also exist section elements, for places where main and article are not appropriate -->
+    <section>I wonder why on earth they have such a large cowboy hat upon them.</section>
+    <footer>A short & simple test, yippee!</footer>
+</article>
+
+</body>
+</html>
